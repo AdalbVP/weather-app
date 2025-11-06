@@ -170,3 +170,88 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* Colores dinámicos por clima */
+.weather-card.sunny {
+  background: linear-gradient(145deg, #ffeb99, #ffd54f);
+  box-shadow: 0 0 20px rgba(255, 223, 70, 0.5);
+}
+
+.weather-card.cloudy {
+  background: linear-gradient(145deg, #b0bec5, #90a4ae);
+  box-shadow: 0 0 20px rgba(144, 164, 174, 0.4);
+}
+
+.weather-card.rainy {
+  background: linear-gradient(145deg, #4fc3f7, #0288d1);
+  box-shadow: 0 0 20px rgba(2, 136, 209, 0.5);
+}
+
+.weather-card.snowy {
+  background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+  box-shadow: 0 0 20px rgba(178, 235, 242, 0.6);
+}
+
+.weather-card.stormy {
+  background: linear-gradient(145deg, #616161, #212121);
+  box-shadow: 0 0 25px rgba(97, 97, 97, 0.7);
+}
+
+.weather-card.misty {
+  background: linear-gradient(145deg, #cfd8dc, #b0bec5);
+  box-shadow: 0 0 20px rgba(176, 190, 197, 0.5);
+}
+
+.weather-card.default {
+  background: linear-gradient(145deg, #90caf9, #42a5f5);
+  box-shadow: 0 0 20px rgba(66, 165, 245, 0.5);
+}
+
+.weather-card {
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  transition: background 1s ease, box-shadow 1.2s ease;
+}
+
+:root {
+  --background-light: #f4f4f4;
+  --text-light: #222;
+  --background-dark: #1c1c1c;
+  --text-dark: #f4f4f4;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode  {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.dark-mode .card {
+  background: #2a2a2a;
+  color: #f4f4f4;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle img {
+  width: 22px;
+  height: 22px;
+}
