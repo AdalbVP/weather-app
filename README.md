@@ -29,14 +29,20 @@ Developed as part of a portfolio project for Frontend + API integration practice
 
 ## Installation & local Setup
 
+
 1. **clone the repository**
+ ```
      Git clone https://github.com/adalbvp/weather-app.git
+```
 2. **Create a config.js file in the root folder**
+   ```
      window.CONFIG = {
        API_KEY: "YOUR_OPENWEATHER_API_KEY_HERE"
      };
+   ```
 3. **Run the project**
+   ```
      open index.html directly in the browser OR
      Use VS Code Live Server for a better experience
-
+   
 ---
