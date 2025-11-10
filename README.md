@@ -7,7 +7,7 @@ Developed as part of a portfolio project for Frontend + API integration practice
 
 ---
 
-##Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |-----------|--------|
